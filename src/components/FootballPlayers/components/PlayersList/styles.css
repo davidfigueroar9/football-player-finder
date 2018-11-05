@@ -1,0 +1,37 @@
+.PlayersList {
+  margin-top: 25px;
+  box-shadow: 0 0.07em 0.125em 0 rgba(0,0,0,.15);
+  background-color: white;
+}
+
+.PlayersList-header {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.PlayersList-header-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.PlayersList-item {
+  display: flex;
+  height: 50px;
+  border-top: .0625em solid #ddd;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.PlayersList-item-text {
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+
+.Filter-input {
+  height: 46px;
+  display: flex;
+  flex: 1;
+  margin-right: 15px;
+  border-radius: 3px;
+  background-color: white;
+  border: .0625em solid #ddd;
+}
+
+
+.Filter-content {
+  margin-top: 10px;
+  display: flex;
+}
+
+.Filter-buttom {
+  background-color: #009ee3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  height: 46px;
+  border-radius: 3px;
+  flex: 1;
+}
+
+.Filter-input:last-child {
+  margin-right: 0;
+}
