@@ -1,7 +1,7 @@
 .FootballPlayers {
   background-color: #F0F0F0;
   min-height: calc(100vh - 40px);
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 
 .FootballPlayers-content {
@@ -13,4 +13,10 @@
   color: #101C36;
   font-size: 24px;
   margin: 20px 0;
+}
+
+@media (max-width: 425px) {
+  .FootballPlayers-title {
+    text-align: center;
+  }
 }

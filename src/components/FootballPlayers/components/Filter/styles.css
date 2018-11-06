@@ -45,3 +45,15 @@
 .Filter-input:last-child {
   margin-right: 0;
 }
+
+@media (max-width: 425px) {
+  .Filter-content {
+      padding: 10px;
+      flex-direction: column;
+      height: auto;
+  }
+  .Filter-input-content {
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+}

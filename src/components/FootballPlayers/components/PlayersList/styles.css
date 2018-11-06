@@ -35,3 +35,15 @@
   flex: 1;
   justify-content: center;
 }
+
+@media (max-width: 425px) {
+  .PlayersList-header, .PlayersList-item {
+      align-items: flex-start;
+      padding: 10px;
+      flex-direction: column;
+      height: auto;
+  }
+  .PlayersList-item-text, .PlayersList-header-text {
+    margin-bottom: 5px;
+  }
+}
