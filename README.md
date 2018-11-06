@@ -1,6 +1,6 @@
 # Football Player Finder
 
-[![Build Status](https://travis-ci.com/davidfigueroar9/football-player-finder.svg?branch=master)](https://travis-ci.com/davidfigueroar9/football-player-finder)
+[![Build Status](https://travis-ci.com/davidfigueroar9/football-player-finder.svg?branch=master)](https://travis-ci.com/davidfigueroar9/football-player-finder) [![Coverage Status](https://coveralls.io/repos/github/davidfigueroar9/football-player-finder/badge.svg?branch=master)](https://coveralls.io/github/davidfigueroar9/football-player-finder?branch=master)
 
 The main goal of this exercise is to familiarize with the technology stack in the Interact Refresh project. To do so, you have to build a simple search form that will fetch players using a few filters.
 
