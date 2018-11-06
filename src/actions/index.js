@@ -7,3 +7,9 @@ export const fetchPlayers = () => async (dispatch, getState, api) => {
     payload: res.data,
   });
 };
+
+export const SET_FILTER = 'SET_FILTER';
+export const setFilter = filters => ({
+  type: SET_FILTER,
+  payload: filters,
+});

@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createStore, applyMiddleware, compose } from 'redux';
+import axios from 'axios';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import reducers from './reducers';
+
+import FootballPlayersWithContainer from './components/FootballPlayers';
+
+import './index.css';
+
+const axiosIntance = axios.create({
+  baseURL: 'https://football-players-b31f2.firebaseio.com/players.json?print=pretty',
+});
+
+const store = createStore(
+  reducers, {},
+  compose(
+    applyMiddleware(thunk.withExtraArgument(axiosIntance)),
+    window.devToolsExtension ? window.devToolsExtension() : f => f,
+  ),
+);
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit
-        <code>src/App.js</code>
-        and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  </div>
+  <Provider store={store}>
+    <FootballPlayersWithContainer />
+  </Provider>
 );
+
 
 export default App;

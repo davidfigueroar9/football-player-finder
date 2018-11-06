@@ -1,3 +1,6 @@
+import FilterWithContainer from './Filter.container';
 import Filter from './Filter';
 
-export default Filter;
+export { Filter };
+
+export default FilterWithContainer;

@@ -17,7 +17,7 @@ const PlayersList = ({ players }) => (
           <div className="PlayersList-item-text">{ player.name }</div>
           <div className="PlayersList-item-text">{ player.position }</div>
           <div className="PlayersList-item-text">{ player.nationality }</div>
-          <div className="PlayersList-item-text">30</div>
+          <div className="PlayersList-item-text">{ player.age }</div>
         </div>
       ))
     }
@@ -30,7 +30,7 @@ PlayersList.propTypes = {
     name: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
     nationality: PropTypes.string.isRequired,
-    age: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
   })).isRequired,
 };
 
