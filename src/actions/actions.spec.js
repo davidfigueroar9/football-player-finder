@@ -1,5 +1,4 @@
-import { setFilter, SET_FILTER } from './index';
-
+import { setFilter, SET_FILTER } from './actions';
 
 describe('playersReducers', () => {
   it('should return correct default state', () => {

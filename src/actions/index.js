@@ -1,15 +1,13 @@
-export const ADD_PLAYERS = 'ADD_NOTE';
+import {
+  ADD_PLAYERS,
+  SET_FILTER,
+  fetchPlayers,
+  setFilter,
+} from './actions';
 
-export const fetchPlayers = () => async (dispatch, getState, api) => {
-  const res = await api.get('/');
-  dispatch({
-    type: ADD_PLAYERS,
-    payload: res.data,
-  });
+export {
+  ADD_PLAYERS,
+  SET_FILTER,
+  fetchPlayers,
+  setFilter,
 };
-
-export const SET_FILTER = 'SET_FILTER';
-export const setFilter = filters => ({
-  type: SET_FILTER,
-  payload: filters,
-});
