@@ -21,7 +21,13 @@ const PlayersList = ({ players }) => (
         </div>
       ))
     }
-
+    {
+      players.length === 0 && (
+        <div className="PlayersList-message-content">
+          <div className="PlayersList-message-text">No players were found</div>
+        </div>
+      )
+    }
   </div>
 );
 

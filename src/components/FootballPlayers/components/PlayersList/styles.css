@@ -28,6 +28,19 @@
   align-items: center;
 }
 
+.PlayersList-message-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.PlayersList-message-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
 .PlayersList-item-text {
   font-size: 18px;
   color: #333;

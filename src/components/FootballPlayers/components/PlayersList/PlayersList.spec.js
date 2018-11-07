@@ -26,4 +26,14 @@ describe('Filter', () => {
     expect(wrapper.find('.PlayersList').length).toBe(1);
     expect(wrapper.find('.PlayersList-item').length).toBe(2);
   });
+
+  it('should render message not found', () => {
+    const players = [];
+
+    const wrapper = shallow(
+      <PlayersList players={players} />,
+    );
+    expect(wrapper.find('.PlayersList-message-content').length).toBe(1);
+    expect(wrapper.find('.PlayersList-message-text').length).toBe(1);
+  });
 });

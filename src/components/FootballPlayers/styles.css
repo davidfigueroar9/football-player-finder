@@ -15,6 +15,12 @@
   margin: 20px 0;
 }
 
+.FootballPlayers-status {
+  text-align: center;
+  color: #101C36;
+  font-size: 24px;
+}
+
 @media (max-width: 425px) {
   .FootballPlayers-title {
     text-align: center;
